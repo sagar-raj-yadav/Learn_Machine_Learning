@@ -257,7 +257,7 @@ ii.Jab hum alag-alag trees ke prediction ko combine
 
 
 
-# 12.Cross Validation
+# 12.Cross Validation (Model ko train karne ke liye use hota h)
 - Model ko sirf training data pe train nahi karte
    Data ko multiple parts me divide kar ke model ki robustness check karte hain
 
@@ -331,16 +331,50 @@ R² increase hi karega.
 
 
 
- # 13.XGBoost
+# 13.XGBoost (Extreme Gradient Boosting)
+- XGBoost decison tree ke galtiyo ko continuously thik karta h.
+- Socho tumhare paas ek simple decision tree model hai.
+   Wo thoda galat predict kar raha hai — kuch errors ho rahe hain.
 
-XGBoost ek machine learning 
-algorithm hai jo Decision Trees par based hota hai,
-Socho tumhare paas ek weak model hai jo thoda galat predict karta hai.
-XGBoost us model ki galtiyan (errors) ko sikhta hai —
-aur next tree ussi galti ko correct karne ki koshish karta hai.
+   * XGBoost ye karata hai:
+     - Pehle ek weak model (tree) banata hai.
+     - Dekhta hai ki wo kaha galti kar raha hai (errors).
+     - Fir next tree unhi galtiyon ko sahi karne ki koshish karta hai.
+     - Har naya tree pichle trees ke mistakes ko improve karta rehta hai.
 
-Ye process baar-baar hoti hai → har naya tree pichle model ke errors ko improve karta hai.
+   Yani ki —
+      👉 Har naya model pichle model ke residuals (errors) se sikhta hai.
+
+   Isko boosting kehte hain — kyunki har model pichle wale ko boost karta hai (improve karta hai).
+
+- Ye process baar-baar hoti hai → har naya tree pichle model ke errors ko improve karta hai.
 Result: accuracy badhti jaati hai
+
+
+Note : - Adaboost and xgboost ka concept mostly same h.
+       -  jo weak model me galtiyan hota h unhe thik karta h and baar baar thik karne pe ek final model banta h . 
+
+
+* difference b/w Adaboost and Xgboost?
+      =>Adaboost
+         - Errors ko handle karta hai by changing sample weights — galat data points pe zyada focus.
+         - Weight-based learning
+         - Regularization Nahi hoti
+         - slow
+         - Tum un students pe zyada dhyaan dete ho jinhone galti ki.
+            Next time unke marks ka weight badha dete ho → taaki model unpe focus kare.
+            🟢 Weight adjustment based learning.
+
+
+     =>Xgboost
+     - Errors handle karta hai by minimizing loss using gradient descent, mathematically optimize karta hai.
+     -Gradient-based learning
+     - L1 & L2 regularization hoti hai
+     - fast
+     - Tum dekhte ho ki student ne kitna galat likha (numerical          difference).
+      Har galti ka “gradient” nikalte ho (kitna minus hai),
+      Aur mathematically har step me usko minimize karte ho.
+      🟢 Gradient descent based learning.
 
 
 
@@ -434,11 +468,69 @@ Recall=TP/TP+FN
 
 F1 Score=2× (Precision+Recall)/ (Precision×Recall)
 
+Ex:-
+i. Accuracy
+Agar positive aur negative customers balanced hain (50-50)
+→ use Accuracy
+
+ii. Precision
+Agar company target karna chahti hai only those customers who are very likely to buy,
+toh wo Precision pe focus karegi.
+
+iii. Recall
+Agar company chahti hai ki koi potential customer chhut na jaye
+(toh jinko bhi interest ho sakta hai, sabko reach kare),
+toh Recall important hai.
+
+iv.F1 Score
+Agar dono chiz ka balance chahiye —
+na to bahut galat target ho,
+na koi interested customer miss ho —
+toh F1 Score best metric hai.
+
 
 ​
 
+# 16. Lasso and ridge
+- Both are Regularization Techniques, joToh overfitting rokne ke liye hum Regularization use karte hain.
+- Aur Regularization ke do popular tareeke hain:
+      👉 Lasso Regression (L1 Regularization)
+          - sum of squares of coefficients
+      👉 Ridge Regression (L2 Regularization)
+          - sum of absolute values of coefficients
+
+# 17.KNN
+- supervised and used for both classification and regression
+- jab tum ek new data point dete ho, to ye check karta hai ki uske nearest K neighbors kaun se hain training data me,
+aur unke label ke basis par decide karta hai output.
+
+* steps
+   - Choose number of neighbors K (e.g., K=3 or 5)
+   - Calculate distance from new point to all existing points
+      (Euclidean, Manhattan, etc.)
+   - Pick K nearest neighbors
+   - Predict label based on majority vote (classification)
+or average value (regression)
 
 
 
+* Distance calculation:-
+ i.  Manhattan Distance
+      output=|x1-y1| + |x2-y2| 
+
+
+
+
+# 18.K-means
+- Unsupervised Learning and used for Clustering
+- K-Means data points ko K clusters (groups) me divide karta hai
+- Example:
+         Maan lo tumhare paas 1000 customers hain.
+         Tumhe nahi pata kaun loyal hain, kaun occasional buyers hain.
+         K-Means algorithm automatically data ko group karega — e.g.
+
+         Cluster 1 → high usage, high income → loyal users
+         Cluster 2 → low usage, medium income → casual users
+         Cluster 3 → new users
 
 
