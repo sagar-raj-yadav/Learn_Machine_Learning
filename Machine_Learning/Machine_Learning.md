@@ -327,7 +327,7 @@ R² increase hi karega.
 - Ex: Socho: Tum ek school me top students ko select karna chahte ho based on test score. CAP curve batata hai ki top X% students me kitne sach me top performers hain.
 
 * 
-![cap curve graph](CAP_CURVE-1.png)
+![cap curve graph](CAP_CURVE.png)
 
 
 
