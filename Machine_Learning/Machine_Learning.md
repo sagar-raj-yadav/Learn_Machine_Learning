@@ -560,12 +560,25 @@ toh F1 Score best metric hai.
 ​
 
 # 16. Lasso and ridge
-- Both are Regularization Techniques, joToh overfitting rokne ke liye hum Regularization use karte hain.
+- Both are Regularization Techniques, agar model overfitting ho gya to overfitting ko rokne ke liye hum  Regularization Techniques ka use karte hain.
+
+- Agar model kisi feature ko zyada importance de raha hai
+(jaise: “Location sabse important hai, baaki sab bekaar!” 😅),
+to hum penalty lagate hain — taaki har feature ko balanced importance mile aur model generalize kare, noise pe fit na ho.
+
 - Aur Regularization ke do popular tareeke hain:
       👉 Lasso Regression (L1 Regularization)
-          - sum of squares of coefficients
-      👉 Ridge Regression (L2 Regularization)
           - sum of absolute values of coefficients
+      👉 Ridge Regression (L2 Regularization)
+          - sum of squares of coefficients
+
+- Penalty lagane ke baad:
+   - Model ke weights chhote ho jaate hain
+   - Model thoda simple aur smooth ho jaata hai
+   - Wo data ke har noise ko follow nahi karta
+   - Testing accuracy improve ho jaati hai
+   - Penalty overfitting kam karti hai
+
 
 # 17.KNN
 - supervised and used for both classification and regression
@@ -587,19 +600,11 @@ or average value (regression)
       output=|x1-y1| + |x2-y2| 
 
 
-
-
 # 18.K-means
-- Unsupervised Learning and used for Clustering
-- K-Means data points ko K clusters (groups) me divide karta hai
-- Example:
-         Maan lo tumhare paas 1000 customers hain.
-         Tumhe nahi pata kaun loyal hain, kaun occasional buyers hain.
-         K-Means algorithm automatically data ko group karega — e.g.
 
-         Cluster 1 → high usage, high income → loyal users
-         Cluster 2 → low usage, medium income → casual users
-         Cluster 3 → new users
+
+
+
 
 
 # 19. Feature Engineering
@@ -617,5 +622,17 @@ iv. Feature creation – jaise “BMI”, “Total Purchase”, “Speed = Dista
 v. Feature selection – remove duplicate 
 
 
-# 20. Bias vs Variance
+# 20. Bias 
+- Bias = Model ne pattern ko sahi se samjha hi nahi
+- High Bias → Underfitting
+- Agar tu har baar ball goalpost ke bahar left side me maar raha hai,
+to tu consistently galat direction me maar raha hai.
+
+
+
+
+# 21. Variance 
+- Ab maan le tu kabhi left, kabhi right, kabhi upar — har baar alag jagah ball maar raha hai.
+- High Variance → Overfitting
+
 
