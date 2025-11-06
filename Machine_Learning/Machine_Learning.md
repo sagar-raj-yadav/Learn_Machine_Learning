@@ -601,10 +601,19 @@ or average value (regression)
 
 
 # 18.K-means
+- Unsupervised Learning Algorithm
+- similar data points ko ek group (cluster) me rakhna.
 
+* Algorithm steps:-
+  i. Choose K → Kitne clusters(groups) chahiye (e.g., K = 3)
+  ii. jitna k chosse kiye wo data points centroid ban jata h.
+  iii. inn centroids ko chor ke,iske alawa jitne data points h wo dekhenge ki hum kis centroid me jaa sakte h(calculate distance using Euclidean distance)
+  iv.haar clusters(group) me jitne data points aaye h unka mean nikal lo.
+  v.ab fir se k centroid ban gya  
+  vi. repeat step iii and iv , jab tak centroid move karna band na kar de
+  vii. finally saare data points apne apne clusters(group) me jaa chuke h.
 
-
-
+  
 
 
 # 19. Feature Engineering
