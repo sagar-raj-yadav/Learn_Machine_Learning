@@ -1,77 +1,78 @@
 
 
 🧠 Artificial Intelligence (AI)
-│
-│──> Machine Learning (ML)      ← AI ka subset
-│     │
-│     ├──> Supervised Learning
-│     │       ├── Linear Regression
-│     │       ├── Logistic Regression
-│     │       ├── Decision Tree
-│     │       ├── Random Forest
-│     │       └── SVM, KNN, Naive Bayes
-│     │
-│     ├──> Unsupervised Learning
-│     │       ├── K-Means Clustering
-│     │       ├── Hierarchical Clustering
-│     │       └── PCA (Dimensionality Reduction)
-│     │
-│     ├──> Semi-Supervised Learning
-│     │
-│     └──> Reinforcement Learning
-│             ├── Q-Learning
-│             ├── SARSA
-│             └── Deep Q-Networks (DQN)
-│
-│
-│──> Deep Learning (DL)          ← ML ka subset
-│     │
-│     ├──> Neural Networks (ANN)
-│     ├──> CNN (Convolutional Neural Network) → Image processing
-│     ├──> RNN (Recurrent Neural Network) → Sequential data
-│     ├──> LSTM / GRU → RNN ke advanced versions
-│     ├──> GAN (Generative Adversarial Network)
-│     ├──> Transformer Architecture (BERT, GPT etc.)
-│     │
-│     └──> Generative AI (GenAI)     ← DL ka subset
-│            │
-│            ├──> Large Language Models (LLMs)
-│            │       ├── GPT (OpenAI)
-│            │       ├── Claude (Anthropic)
-│            │       ├── Gemini (Google)
-│            │       └── LLaMA (Meta)
-│            │
-│            ├──> Diffusion Models
-│            │       ├── Stable Diffusion
-│            │       └── DALL·E
-│            │
-│            ├──> GAN-based Generative Models
-│            │       └── Deepfake (Fake videos/images)
-│            │
-│            └──> Audio/Voice Models
-│                    ├── Voice Cloning
-│                    └── Music Generation
-│
-│
-│──> Natural Language Processing (NLP)
-│     ├── Text Classification
-│     ├── Sentiment Analysis
-│     ├── Translation
-│     └── Chatbots (LLMs ka use hota hai yahan)
-│
-│
-│──> Computer Vision (CV)
-│     ├── Image Classification
-│     ├── Object Detection (YOLO, SSD)
-│     ├── Image Segmentation (U-Net)
-│     └── Deepfake (CV + GenAI ka intersection)
-│
-│
-└──> Robotics
-       ├── Path Planning
-       ├── Motion Control
-       └── AI-based automation
 
+## 🤖 Artificial Intelligence (AI)
+│  
+│──> **Machine Learning (ML)** ← *AI ka subset*  
+│     │  
+│     ├──> **Supervised Learning**  
+│     │       ├── Linear Regression  
+│     │       ├── Logistic Regression  
+│     │       ├── Decision Tree  
+│     │       ├── Random Forest  
+│     │       └── SVM, KNN, Naive Bayes  
+│     │  
+│     ├──> **Unsupervised Learning**  
+│     │       ├── K-Means Clustering  
+│     │       ├── Hierarchical Clustering  
+│     │       └── PCA (Dimensionality Reduction)  
+│     │  
+│     ├──> **Semi-Supervised Learning**  
+│     │  
+│     └──> **Reinforcement Learning**  
+│             ├── Q-Learning  
+│             ├── SARSA  
+│             └── Deep Q-Networks (DQN)  
+│  
+│  
+│──> **Deep Learning (DL)** ← *ML ka subset*  
+│     │  
+│     ├──> Neural Networks (ANN)  
+│     ├──> CNN (Convolutional Neural Network) → *Image Processing*  
+│     ├──> RNN (Recurrent Neural Network) → *Sequential Data*  
+│     ├──> LSTM / GRU → *RNN ke advanced versions*  
+│     ├──> GAN (Generative Adversarial Network)  
+│     ├──> Transformer Architecture (BERT, GPT etc.)  
+│     │  
+│     └──> **Generative AI (GenAI)** ← *DL ka subset*  
+│            │  
+│            ├──> **Large Language Models (LLMs)**  
+│            │       ├── GPT (OpenAI)  
+│            │       ├── Claude (Anthropic)  
+│            │       ├── Gemini (Google)  
+│            │       └── LLaMA (Meta)  
+│            │  
+│            ├──> **Diffusion Models**  
+│            │       ├── Stable Diffusion  
+│            │       └── DALL·E  
+│            │  
+│            ├──> **GAN-based Generative Models**  
+│            │       └── Deepfake (Fake videos/images)  
+│            │  
+│            └──> **Audio / Voice Models**  
+│                    ├── Voice Cloning  
+│                    └── Music Generation  
+│  
+│  
+│──> **Natural Language Processing (NLP)**  
+│     ├── Text Classification  
+│     ├── Sentiment Analysis  
+│     ├── Translation  
+│     └── Chatbots *(LLMs ka use hota hai yahan)*  
+│  
+│  
+│──> **Computer Vision (CV)**  
+│     ├── Image Classification  
+│     ├── Object Detection (YOLO, SSD)  
+│     ├── Image Segmentation (U-Net)  
+│     └── Deepfake *(CV + GenAI ka intersection)*  
+│  
+│  
+└──> **Robotics**  
+       ├── Path Planning  
+       ├── Motion Control  
+       └── AI-based Automation  
 
 ![AI](Flow_of_AI.png)
 
