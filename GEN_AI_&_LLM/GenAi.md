@@ -1,6 +1,6 @@
 
+# 🧠 Artificial Intelligence (AI) — Complete Hierarchy
 
-🧠 Artificial Intelligence (AI)
 
 ## 🤖 Artificial Intelligence (AI)
 │  
